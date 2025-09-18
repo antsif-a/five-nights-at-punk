@@ -19,7 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://b047l1cy1gkse" path="res://textures/static/17.png" id="16_nn1g5"]
 [ext_resource type="Texture2D" uid="uid://b1k81dsgy4gsl" path="res://textures/static/18.png" id="17_iurg3"]
 [ext_resource type="Texture2D" uid="uid://0tav1ay124eh" path="res://textures/static/20.png" id="18_ywaci"]
-[ext_resource type="Shader" uid="uid://dfh05iledb47r" path="res://removewhite.gdshader" id="20_mg4k4"]
+[ext_resource type="Shader" uid="uid://dfh05iledb47r" path="res://shaders/removewhite.gdshader" id="20_mg4k4"]
 [ext_resource type="Texture2D" uid="uid://lkfjb3j4obhu" path="res://textures/monsters/edick/photo_2025-09-18_20-41-05.jpg" id="21_mg4k4"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cq47v"]

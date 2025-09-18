@@ -13,7 +13,7 @@ config_version=5
 config/name="Пять ночей в ПУНКе"
 run/main_scene="uid://cxdxeq0algmar"
 config/features=PackedStringArray("4.5", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://textures/icon.svg"
 
 [autoload]
 
