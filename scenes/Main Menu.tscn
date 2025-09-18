@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cxdxeq0algmar"]
+[gd_scene load_steps=33 format=3 uid="uid://cxdxeq0algmar"]
 
 [ext_resource type="Texture2D" uid="uid://dnts3fr687srl" path="res://textures/photo_2025-08-29_21-44-43.jpg" id="1_khfdq"]
 [ext_resource type="Shader" uid="uid://04inwuhwjf52" path="res://shaders/blipflash.gdshader" id="2_i5clu"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://tqmf172ib2yq" path="res://textures/monsters/edick/photo_2025-09-18_21-00-21.jpg" id="23_718bn"]
 [ext_resource type="Texture2D" uid="uid://smwwlu1vuj8x" path="res://textures/monsters/edick/photo_2025-09-18_21-00-18.jpg" id="24_i5clu"]
 [ext_resource type="Script" uid="uid://bqmf0gcpv85wd" path="res://scripts/edick-faces-switch.gd" id="24_p4cu8"]
+[ext_resource type="FontFile" uid="uid://csyuhw2pxuw27" path="res://font/Lost....ttf" id="26_04aus"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_cq47v"]
 shader = ExtResource("2_i5clu")
@@ -180,3 +181,31 @@ one_shot = true
 
 [node name="twitch" type="Timer" parent="canvas2/Photo20250918204105"]
 one_shot = true
+
+[node name="new_game" type="Button" parent="canvas2"]
+offset_left = 96.0
+offset_top = 348.0
+offset_right = 368.0
+offset_bottom = 443.0
+theme_override_fonts/font = ExtResource("26_04aus")
+theme_override_font_sizes/font_size = 60
+text = "Новая игра"
+flat = true
+
+[node name="Continue" type="Button" parent="canvas2"]
+offset_left = 89.0
+offset_top = 458.0
+offset_right = 380.0
+offset_bottom = 527.0
+theme_override_fonts/font = ExtResource("26_04aus")
+theme_override_font_sizes/font_size = 60
+text = "Продолжить"
+
+[node name="Label" type="Label" parent="canvas2"]
+offset_left = 82.0
+offset_top = 46.0
+offset_right = 936.0
+offset_bottom = 167.0
+theme_override_fonts/font = ExtResource("26_04aus")
+theme_override_font_sizes/font_size = 100
+text = "Пять Ночей в ПУНКе"
