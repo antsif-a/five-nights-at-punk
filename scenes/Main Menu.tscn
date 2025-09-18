@@ -1,0 +1,182 @@
+[gd_scene load_steps=32 format=3 uid="uid://cxdxeq0algmar"]
+
+[ext_resource type="Texture2D" uid="uid://dnts3fr687srl" path="res://textures/photo_2025-08-29_21-44-43.jpg" id="1_khfdq"]
+[ext_resource type="Shader" uid="uid://04inwuhwjf52" path="res://shaders/blipflash.gdshader" id="2_i5clu"]
+[ext_resource type="Texture2D" uid="uid://c8iwrd66of7b4" path="res://textures/blip_flash/menu_1.png" id="3_04aus"]
+[ext_resource type="Texture2D" uid="uid://de1ba0x5jao4g" path="res://textures/blip_flash/menu_2.png" id="4_ssorb"]
+[ext_resource type="Texture2D" uid="uid://dfd3mcb4cbwnu" path="res://textures/blip_flash/menu_3.png" id="5_uikcu"]
+[ext_resource type="Texture2D" uid="uid://bafnmwk88lao8" path="res://textures/blip_flash/menu_4.png" id="6_qxwtn"]
+[ext_resource type="Texture2D" uid="uid://bpy1grf43jyxt" path="res://textures/blip_flash/menu_7.png" id="7_vk2xn"]
+[ext_resource type="Texture2D" uid="uid://b5x4hshibaqc7" path="res://textures/blip_flash/menu_8.png" id="8_uge4m"]
+[ext_resource type="Script" uid="uid://bua3orqdqhr05" path="res://scripts/blipflash.gd" id="9_113si"]
+[ext_resource type="Shader" uid="uid://bvnhut5vxb8be" path="res://shaders/static.gdshader" id="10_n84r6"]
+[ext_resource type="Texture2D" uid="uid://dviuw3vob6lkd" path="res://textures/static/12.png" id="11_vofng"]
+[ext_resource type="Texture2D" uid="uid://s21mpupl404k" path="res://textures/static/13.png" id="12_r03eo"]
+[ext_resource type="Texture2D" uid="uid://bmfpbcrs62s0h" path="res://textures/static/14.png" id="13_nxisu"]
+[ext_resource type="Texture2D" uid="uid://c3kauktu1bxnl" path="res://textures/static/15.png" id="14_7g0gv"]
+[ext_resource type="Texture2D" uid="uid://68xc44sv1d4v" path="res://textures/static/16.png" id="15_j420w"]
+[ext_resource type="Texture2D" uid="uid://b047l1cy1gkse" path="res://textures/static/17.png" id="16_jrknw"]
+[ext_resource type="Texture2D" uid="uid://b1k81dsgy4gsl" path="res://textures/static/18.png" id="17_khgiv"]
+[ext_resource type="Texture2D" uid="uid://0tav1ay124eh" path="res://textures/static/20.png" id="18_ioor3"]
+[ext_resource type="Script" uid="uid://dmji2fo888jfq" path="res://scripts/static.gd" id="19_ywwyy"]
+[ext_resource type="Shader" uid="uid://dfh05iledb47r" path="res://shaders/removewhite.gdshader" id="20_h4pfp"]
+[ext_resource type="Texture2D" uid="uid://lkfjb3j4obhu" path="res://textures/monsters/edick/photo_2025-09-18_20-41-05.jpg" id="21_awl1v"]
+[ext_resource type="Texture2D" uid="uid://csfjikkk0lm6a" path="res://textures/monsters/edick/photo_2025-09-18_21-00-20.jpg" id="22_dbdej"]
+[ext_resource type="Texture2D" uid="uid://tqmf172ib2yq" path="res://textures/monsters/edick/photo_2025-09-18_21-00-21.jpg" id="23_718bn"]
+[ext_resource type="Texture2D" uid="uid://smwwlu1vuj8x" path="res://textures/monsters/edick/photo_2025-09-18_21-00-18.jpg" id="24_i5clu"]
+[ext_resource type="Script" uid="uid://bqmf0gcpv85wd" path="res://scripts/edick-faces-switch.gd" id="24_p4cu8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cq47v"]
+shader = ExtResource("2_i5clu")
+shader_parameter/alpha = 0.2
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7c0qk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_04aus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ssorb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_uikcu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_qxwtn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vk2xn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uge4m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7uqt0"]
+shader = ExtResource("10_n84r6")
+shader_parameter/threshold = 0.3
+shader_parameter/alpha = 0.4
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yoloy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_vofng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_r03eo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nxisu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_7g0gv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_j420w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jrknw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_khgiv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ioor3")
+}],
+"loop": true,
+"name": &"default",
+"speed": 60.0
+}]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_50c28"]
+shader = ExtResource("20_h4pfp")
+shader_parameter/darkness = 0.6
+shader_parameter/threshold = 0.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vchbk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("21_awl1v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_dbdej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_718bn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_i5clu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="canvas" type="CanvasLayer" parent="."]
+layer = -254
+
+[node name="canvas pic" type="TextureRect" parent="canvas"]
+modulate = Color(0.57996243, 0.57996243, 0.57996243, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_khfdq")
+
+[node name="blip flash" type="AnimatedSprite2D" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_cq47v")
+sprite_frames = SubResource("SpriteFrames_7c0qk")
+autoplay = "default"
+frame_progress = 0.022537528
+centered = false
+script = ExtResource("9_113si")
+
+[node name="rest" type="Timer" parent="blip flash"]
+one_shot = true
+
+[node name="twitch" type="Timer" parent="blip flash"]
+one_shot = true
+
+[node name="static" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_7uqt0")
+sprite_frames = SubResource("SpriteFrames_yoloy")
+autoplay = "default"
+frame_progress = 0.8755365
+centered = false
+script = ExtResource("19_ywwyy")
+
+[node name="rest" type="Timer" parent="static"]
+one_shot = true
+
+[node name="twitch" type="Timer" parent="static"]
+one_shot = true
+
+[node name="rest" type="Timer" parent="."]
+one_shot = true
+
+[node name="twitch" type="Timer" parent="."]
+one_shot = true
+
+[node name="canvas2" type="CanvasLayer" parent="."]
+layer = -254
+
+[node name="Photo20250918204105" type="AnimatedSprite2D" parent="canvas2"]
+material = SubResource("ShaderMaterial_50c28")
+position = Vector2(1088, 545.00006)
+scale = Vector2(1.1079862, 0.56059027)
+sprite_frames = SubResource("SpriteFrames_vchbk")
+frame_progress = 0.14789413
+script = ExtResource("24_p4cu8")
+
+[node name="rest" type="Timer" parent="canvas2/Photo20250918204105"]
+one_shot = true
+
+[node name="twitch" type="Timer" parent="canvas2/Photo20250918204105"]
+one_shot = true
